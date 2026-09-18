@@ -27,7 +27,6 @@ Myself (Tyler) @TylerConwell (github)
 
 Recipe wiki pictures:
 
-<br>
 https://en.wikipedia.org/wiki/Ratatouille
 
 <br>
