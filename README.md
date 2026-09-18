@@ -20,6 +20,9 @@ Myself (Tyler) @TylerConwell (github)
 
 ## Pictures of site
 
+Soon this site will be on github and you will not need pictures of it to work.
+You'll only need to do "your-github-username.github.io/your-github-repo-name" and enter in this repo's info.
+
 
 
 
