@@ -1,5 +1,7 @@
 # French_recipe_page
 
+This web page will be about adding recipes from around the world and making them pop with beautiful css and JS features down the road.
+
 ## Description
 
 This is a French inspired personal cook book some recipes have been addapted through online blogs and websites, others are recipes that I myself make and have catologied here for my own benefit incase I ever need a refresher 10+ years down the line.
