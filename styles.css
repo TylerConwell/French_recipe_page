@@ -41,8 +41,7 @@ p {
 }
 
 .receipt_link {
-    text-align: center; /* using a class selector */
-    list-style-position: inside;
+    list-style-position: inside; /* using a class selector */
 }
 
 .home_link {
@@ -55,8 +54,49 @@ p {
     padding-left: 450px;
 }
 
+
+
+
+
+
+
+.background_image {
+    background-color: var(--slate);
+    display: flex;
+    
+    /* margin-left: 33%;
+    margin-right: 33%; */
+    
+}
+
 .recipe_image {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.background_image.recipe_image {
+    /* using a chaining selector */
+
+    /* text-align: center; */
+
+
+    justify-content: center;
+
+    /* align-items: center; */
+
+
+  
+    /* margin-left: 400px;
+    margin-right: 400px;
+    height: auto;
+    width: auto;
     text-align: center;
+    padding: 10px;
+    flex-wrap: wrap; */
+
+
 }
 
 .directions_list {
