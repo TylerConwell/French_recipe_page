@@ -58,11 +58,14 @@ p {
 
 
 
-
+.align_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .background_image {
     background-color: var(--slate);
-    display: inline-block;
 }
 
 .recipe_image {
@@ -73,13 +76,19 @@ p {
 }
 
 .background_image.recipe_image {
-    justify-content: center;  /* using a chaining selector */
+     /* using a chaining selector */
+
+/*      
+    justify-content: center;  
+   
     align-items: center;
     
 
     background-position: center, center;
-    background-size: 50% auto, cover;
+    background-size: 50% auto, cover; */
 
+
+ 
 
 }
 
