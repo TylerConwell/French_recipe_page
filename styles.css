@@ -62,11 +62,7 @@ p {
 
 .background_image {
     background-color: var(--slate);
-    display: flex;
-    
-    /* margin-left: 33%;
-    margin-right: 33%; */
-    
+    display: inline-block;
 }
 
 .recipe_image {
@@ -77,30 +73,20 @@ p {
 }
 
 .background_image.recipe_image {
-    /* using a chaining selector */
+    justify-content: center;  /* using a chaining selector */
+    align-items: center;
+    
 
-    /* text-align: center; */
-
-
-    justify-content: center;
-
-    /* align-items: center; */
-
-
-  
-    /* margin-left: 400px;
-    margin-right: 400px;
-    height: auto;
-    width: auto;
-    text-align: center;
-    padding: 10px;
-    flex-wrap: wrap; */
+    background-position: center, center;
+    background-size: 50% auto, cover;
 
 
 }
 
+
+
+
 .directions_list {
     padding-left: 200px;
     list-style-position: outside;
-
 }
