@@ -1,3 +1,66 @@
 /* external file for index.html */
 
+:root {
+    --parchment: #f1e9d2;
+    --orange: #ecc5a2;
+    --light-blue: #a3b6ba;
+    --teal: #5e9bac;
+    --linen: #ede3de;
+    --burnt-orange: #a76e49;
+    --slate: #4b5c5d;
+}
 
+* {
+    background-color: var(--parchment); /* using a universal selector all pages*/
+}
+
+#fr_title {
+    background-color: var(--orange); /* using id selector for titles */
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#en_title {
+    background-color: var(--light-blue);
+    padding: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+h1, h2 {
+    text-align: center; /* using a type selector */
+}
+
+p {
+    text-align: center;
+}
+
+.receipt_link, .home_link, .ingredient_list {
+    text-align: center; /* using a group selector */
+}
+
+.receipt_link {
+    text-align: center; /* using a class selector */
+    list-style-position: inside;
+}
+
+.home_link {
+    text-align: center;
+}
+
+.ingredient_list {
+    text-align: left;
+    list-style-position: inside;
+    padding-left: 450px;
+}
+
+.recipe_image {
+    text-align: center;
+}
+
+.directions_list {
+    padding-left: 200px;
+    list-style-position: outside;
+
+}
