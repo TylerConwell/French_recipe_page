@@ -10,6 +10,12 @@
     --slate: #4b5c5d;
 }
 
+html {
+    position: fixed;
+    border: 15px solid var(--burnt-orange);
+    inset: 0;
+}
+
 * {
     background-color: var(--parchment); /* using a universal selector all pages*/
 }
