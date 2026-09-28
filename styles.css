@@ -11,7 +11,6 @@
 }
 
 html {
-    position: fixed;
     border: 15px solid var(--burnt-orange);
     inset: 0;
 }
@@ -54,6 +53,14 @@ p {
     text-align: center;
 }
 
+.home_link#another_recipe {
+    /* using the chaining selector */
+
+
+
+    font-weight: lighter;
+}
+
 .ingredient_list {
     text-align: left;
     list-style-position: inside;
@@ -88,10 +95,6 @@ p {
 
     background-position: center, center;
     background-size: 50% auto, cover; */
-
-
- 
-
 }
 
 
