@@ -54,11 +54,7 @@ p {
 }
 
 .home_link#another_recipe {
-    /* using the chaining selector */
-
-
-
-    font-weight: lighter;
+    font-weight: lighter; /* using the chaining selector */
 }
 
 .ingredient_list {
@@ -75,6 +71,7 @@ p {
 
 .background_image {
     background-color: var(--slate);
+
 }
 
 .recipe_image {
@@ -85,20 +82,22 @@ p {
 }
 
 .background_image.recipe_image {
-     /* using a chaining selector */
+    
 
-/*      
-    justify-content: center;  
+/*  justify-content: center;  
    
     align-items: center;
     
 
     background-position: center, center;
-    background-size: 50% auto, cover; */
+    background-size: 50% auto, cover; 
+*/
 }
 
-
-
+.rat_img .lasag_img {
+    width: 50%;  /* using a chaining selector */
+    height: auto;
+}
 
 .directions_list {
     padding-left: 20%;
