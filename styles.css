@@ -67,6 +67,8 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    border: 2px solid green;
 }
 
 .background_image {
@@ -92,6 +94,16 @@ p {
     background-position: center, center;
     background-size: 50% auto, cover; 
 */
+
+border: 2px solid blue;
+}
+
+.lasag_img {
+    width: 75%;
+    height: auto;
+
+    
+    border: 2px solid red;
 }
 
 .rat_img .lasag_img {
