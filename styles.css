@@ -57,14 +57,6 @@ p {
     font-weight: lighter; /* using the chaining selector */
 }
 
-/* 
-li {
-    text-align: left;
-    list-style-position: inside;
-
-
-} */
-
 .align_ingred {
     text-align: center;
 
@@ -72,20 +64,6 @@ li {
 }
 
 .ingredient_list {
-    /* text-align: left; */
-    /* list-style-position: inside; */
-    /* padding-left: 45%; */
-
-
-
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-left: 0; */
-
-
-
     display:inline-block;
  
 
@@ -102,7 +80,6 @@ li {
 
 .background_image {
     background-color: var(--slate);
-
 }
 
 .recipe_image {
@@ -113,17 +90,6 @@ li {
 }
 
 .background_image.recipe_image {
-    
-
-/*  justify-content: center;  
-   
-    align-items: center;
-    
-
-    background-position: center, center;
-    background-size: 50% auto, cover; 
-*/
-
     background-size: 50% auto, cover;
     min-width: 0;
 
@@ -132,9 +98,6 @@ li {
 }
 
 .lasag_img {
-    /* width: 80%;
-    height: auto; */
-
     max-width: 99%;
     align-items: center;
     justify-content: center;
@@ -147,7 +110,6 @@ li {
     height: auto;
 }
 
-
 .align_direct {
     text-align: center;
 
@@ -156,9 +118,6 @@ li {
 
 
 .directions_list {
-    /* padding-left: 20%;
-    list-style-position: outside; */
-
     display:inline-block;
 
     border: 2px solid purple;
