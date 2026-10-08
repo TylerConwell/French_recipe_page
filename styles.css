@@ -1,3 +1,165 @@
 /* external file for index.html */
 
+:root {
+    --parchment: #f1e9d2;
+    --orange: #ecc5a2;
+    --light-blue: #a3b6ba;
+    --teal: #5e9bac;
+    --linen: #ede3de;
+    --burnt-orange: #a76e49;
+    --slate: #4b5c5d;
+}
 
+html {
+    border: 15px solid var(--burnt-orange);
+    inset: 0;
+}
+
+* {
+    background-color: var(--parchment); /* using a universal selector all pages*/
+}
+
+#fr_title {
+    background-color: var(--orange); /* using id selector for titles */
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#en_title {
+    background-color: var(--light-blue);
+    padding: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+h1, h2 {
+    text-align: center; /* using a type selector */
+}
+
+p {
+    text-align: center;
+}
+
+.receipt_link, .home_link, .ingredient_list {
+    text-align: center; /* using a group selector */
+}
+
+.receipt_link {
+    list-style-position: inside; /* using a class selector */
+}
+
+.home_link {
+    text-align: center;
+}
+
+.home_link#another_recipe {
+    font-weight: lighter; /* using the chaining selector */
+}
+
+/* 
+li {
+    text-align: left;
+    list-style-position: inside;
+
+
+} */
+
+.align_ingred {
+    text-align: center;
+
+    border: solid 2px teal;
+}
+
+.ingredient_list {
+    /* text-align: left; */
+    /* list-style-position: inside; */
+    /* padding-left: 45%; */
+
+
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0; */
+
+
+
+    display:inline-block;
+ 
+
+    border: solid 2px orange;
+}
+
+.align_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid green;
+}
+
+.background_image {
+    background-color: var(--slate);
+
+}
+
+.recipe_image {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 7px;
+}
+
+.background_image.recipe_image {
+    
+
+/*  justify-content: center;  
+   
+    align-items: center;
+    
+
+    background-position: center, center;
+    background-size: 50% auto, cover; 
+*/
+
+    background-size: 50% auto, cover;
+    min-width: 0;
+
+
+    border: 2px solid blue;
+}
+
+.lasag_img {
+    /* width: 80%;
+    height: auto; */
+
+    max-width: 99%;
+    align-items: center;
+    justify-content: center;
+    
+    border: 2px solid red;
+}
+
+.rat_img .lasag_img {
+    width: 50%;  /* using a chaining selector */
+    height: auto;
+}
+
+
+.align_direct {
+    text-align: center;
+
+    border: 2px solid maroon;
+}
+
+
+.directions_list {
+    /* padding-left: 20%;
+    list-style-position: outside; */
+
+    display:inline-block;
+
+    border: 2px solid purple;
+}
