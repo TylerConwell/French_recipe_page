@@ -34,3 +34,10 @@ https://en.wikipedia.org/wiki/Ratatouille
 
 <br>
 https://en.wikipedia.org/wiki/Lasagna
+
+
+
+## Notes
+
+This repo is used while learning html, css, and javascript from The Odin Project. Using this resource as a spring board to remember basic concepts and build skills without the use or any outside help including AI. This repo will be added on in stages with different branches helping to split up the tutorial work that will all be pushed to main.
+
