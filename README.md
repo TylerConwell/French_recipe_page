@@ -8,11 +8,11 @@ This is a French inspired personal cook book some recipes have been addapted thr
 
 ## Getting started / Dependencies
 
-I'm pretty sure anything you throw at this will run the code since it is pure html, css, and a pinch of javascript. All going to be hosted on github. I guess just make sure your browswer is able to run HTML 5?
+I'm pretty sure anything you throw at this will run the code since it is pure html, css, and a pinch of javascript. All going to be hosted on github pages. I guess just make sure your browser is able to run HTML 5?
 
 ## Installing
 
-Make sure you have dependencies installed on vscode and you should be good to go since any web browser can run html,css and java script.
+Make sure you have dependencies installed on vscode and you should be good to go since any web browser can run html, css, and java script.
 
 ## Authors
 
