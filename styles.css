@@ -60,14 +60,14 @@ p {
 .align_ingred {
     text-align: center;
 
-    border: solid 2px teal;
+    /* border: solid 2px teal; */
 }
 
 .ingredient_list {
     display:inline-block;
  
 
-    border: solid 2px orange;
+    /* border: solid 2px orange; */
 }
 
 .align_box {
@@ -75,7 +75,7 @@ p {
     justify-content: center;
     align-items: center;
 
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 .background_image {
@@ -94,7 +94,7 @@ p {
     min-width: 0;
 
 
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 .lasag_img {
@@ -102,7 +102,7 @@ p {
     align-items: center;
     justify-content: center;
     
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .rat_img .lasag_img {
@@ -113,12 +113,11 @@ p {
 .align_direct {
     text-align: center;
 
-    border: 2px solid maroon;
+    /* border: 2px solid maroon; */
 }
-
 
 .directions_list {
     display:inline-block;
 
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
 }
