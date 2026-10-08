@@ -57,10 +57,39 @@ p {
     font-weight: lighter; /* using the chaining selector */
 }
 
-.ingredient_list {
+/* 
+li {
     text-align: left;
     list-style-position: inside;
-    padding-left: 45%;
+
+
+} */
+
+.align_ingred {
+    text-align: center;
+
+    border: solid 2px teal;
+}
+
+.ingredient_list {
+    /* text-align: left; */
+    /* list-style-position: inside; */
+    /* padding-left: 45%; */
+
+
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0; */
+
+
+
+    display:inline-block;
+ 
+
+    border: solid 2px orange;
 }
 
 .align_box {
@@ -95,13 +124,20 @@ p {
     background-size: 50% auto, cover; 
 */
 
-border: 2px solid blue;
+    background-size: 50% auto, cover;
+    min-width: 0;
+
+
+    border: 2px solid blue;
 }
 
 .lasag_img {
-    width: 75%;
-    height: auto;
+    /* width: 80%;
+    height: auto; */
 
+    max-width: 99%;
+    align-items: center;
+    justify-content: center;
     
     border: 2px solid red;
 }
@@ -111,9 +147,19 @@ border: 2px solid blue;
     height: auto;
 }
 
-.directions_list {
-    padding-left: 20%;
-    list-style-position: outside;
 
-    
+.align_direct {
+    text-align: center;
+
+    border: 2px solid maroon;
+}
+
+
+.directions_list {
+    /* padding-left: 20%;
+    list-style-position: outside; */
+
+    display:inline-block;
+
+    border: 2px solid purple;
 }
