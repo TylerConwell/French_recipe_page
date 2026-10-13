@@ -106,7 +106,7 @@ p {
 }
 
 .rat_img .lasag_img {
-    width: 50%;  /* using a chaining selector */
+    width: 50%;  /* using a chaining selector and descendant combinator*/
     height: auto;
 }
 
