@@ -64,7 +64,7 @@ p {
 }
 
 .ingredient_list {
-    display:inline-block;
+    display:inline-block; /* inline styling with block style sizing */
  
 
     /* border: solid 2px orange; */
