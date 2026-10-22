@@ -8,6 +8,8 @@
     --linen: #ede3de;
     --burnt-orange: #a76e49;
     --slate: #4b5c5d;
+
+    --brown: #3f261d;
 }
 
 html {
@@ -149,4 +151,13 @@ p {
     border: 4px solid var(--burnt-orange);
     height: 200px;
     flex: 1;
+
+}
+
+#handle {
+    width: 20px;
+    height: 50px;
+    background-color: var(--brown);
+
+    display:inline-block;
 }
