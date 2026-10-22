@@ -121,3 +121,32 @@ p {
 
     /* border: 2px solid purple; */
 }
+
+
+
+
+
+.flex_container_shelf {
+    /* display: flex; */
+ /* learning about flex boxes */
+}
+
+.flex_container_shelf div {
+    /* all divs are inside the flex container */
+    background-color: var(--linen);
+    border: 4px solid var(--burnt-orange);
+    height: 150px;
+    /* flex: 1; */
+}
+
+
+.flex_container_cabinet {
+    display: flex;
+}
+
+.flex_container_cabinet div {
+    background-color: var(--linen);
+    border: 4px solid var(--burnt-orange);
+    height: 200px;
+    flex: 1;
+}
