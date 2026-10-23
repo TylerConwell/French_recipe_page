@@ -61,23 +61,16 @@ p {
 
 .align_ingred {
     text-align: center;
-
-    /* border: solid 2px teal; */
 }
 
 .ingredient_list {
-    display:inline-block; /* inline styling with block style sizing */
- 
-
-    /* border: solid 2px orange; */
+    display: inline-block; /* inline styling with block style sizing */
 }
 
 .align_box {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* border: 2px solid green; */
 }
 
 .background_image {
@@ -94,17 +87,12 @@ p {
 .background_image.recipe_image {
     background-size: 50% auto, cover;
     min-width: 0;
-
-
-    /* border: 2px solid blue; */
 }
 
 .lasag_img {
     max-width: 99%;
     align-items: center;
     justify-content: center;
-    
-    /* border: 2px solid red; */
 }
 
 .rat_img .lasag_img {
@@ -114,15 +102,13 @@ p {
 
 .align_direct {
     text-align: center;
-
-    /* border: 2px solid maroon; */
 }
 
 .directions_list {
     display:inline-block;
-
-    /* border: 2px solid purple; */
 }
+
+
 
 
 
@@ -130,7 +116,7 @@ p {
 
 .flex_container_shelf {
     /* display: flex; */
- /* learning about flex boxes */
+    /* learning about flex boxes */
 }
 
 .flex_container_shelf div {
@@ -142,24 +128,37 @@ p {
 }
 
 
+
+
+
+
 .flex_container_cabinet {
     display: flex;
+    /* position: relative; */
+
+ 
 }
 
-.flex_container_cabinet div {
+.flex_container_cabinet > div { /* making a child combinator leaving the handle alone */
     background-color: var(--linen);
     border: 4px solid var(--burnt-orange);
     height: 200px;
-    flex: 1;
 
+    /* needed for making the 1,2,3 boxes not flat & verical */
+    flex: 1 1 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    
 }
 
-#handle {
+.handle {
     width: 20px;
     height: 50px;
     background-color: var(--brown);
-    margin-left: auto;
-    margin-top: 30%;
-    margin-right: 5%;
     border: none;
 }
+
+
