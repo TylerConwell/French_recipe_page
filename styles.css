@@ -155,10 +155,14 @@ p {
     list-style-position: inside;
 }
 
-
 .par_flex {
     text-align: center;
     font-size: 20px;
     padding-right: 20px;
+    background-color: var(--linen);
+}
+
+.flex_link {
+    text-decoration: none;
     background-color: var(--linen);
 }
