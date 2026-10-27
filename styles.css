@@ -124,8 +124,6 @@ p {
 .flex_container_cabinet {
     display: flex;
     /* position: relative; */
-
- 
 }
 
 .flex_container_cabinet > div { /* making a child combinator leaving the handle alone */
