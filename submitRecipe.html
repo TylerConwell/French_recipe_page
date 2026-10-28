@@ -3,11 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Submit Recipe</title>
 
     <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
     <h1>Submit Your Recipe Here</h1>
+
+    <form>
+        <div class="form_group">
+            <label for="recipeName">Recipe Name:</label>
+            <input type="text" id="recipeName" name="recipeName" required>
+
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" name="ingredients" required></textarea>
+
+            <label for="directions">Directions:</label>
+            <textarea id="directions" name="directions" required></textarea>
+
+            <input type="submit" value="Submit">
+        </div>
+    </form>
 </body>
+
+<footer class="footer_index">
+    <p><a href="../French_recipe_page/recipes/cabinet.html">Cabinet</a> | <a href="./index.html">Home</a></p>
+</footer>
 </html>
