@@ -165,3 +165,6 @@ p {
     background-color: var(--linen);
 }
 
+.long_par {
+    margin: 20px;
+}
