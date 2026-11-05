@@ -15,31 +15,31 @@ async function tenSecStop() {
 
 // make a function to randomly select a veggie from the list
 function getRandomVeggie() {
-    const veggies = [squash, eggplant, zucchini, bellPepper];
-    const randomIndex = Math.floor(Math.random() * veggies.length);
+    const veggies = [squash, eggplant, zucchini, bellPepper]; // array list of the veggies
+    let randomIndex = Math.floor(Math.random() * veggies.length);
     let counter = 0;
 
-    while (counter < 10) {
+    do {
         switch (veggies[randomIndex]) {
             case squash:
-                console.log("squash");
+                console.log("squash (yellow)");
                 break;
             case eggplant:
-                console.log("eggplant");
+                console.log("eggplant (purple)");
                 break;
             case zucchini:
-                console.log("zucchini");
+                console.log("zucchini (green)");
                 break;
             case bellPepper:
-                console.log("bell pepper");
+                console.log("bell pepper (red)");
                 break;
             default:
                 console.log("no veggie selected");
         }
 
         counter++;
-        return veggies[randomIndex];
-    }
+        randomIndex = Math.floor(Math.random() * veggies.length);
+    } while (counter < 15);
 }
 
 
@@ -48,10 +48,14 @@ function getRandomVeggie() {
 window.addEventListener("load", () => {
     requestAnimationFrame(() => {
         // tenSecStop();
-        setTimeout(() => { 
+        setTimeout(() => {
+            console.log("starting");
             alert("OH BOY, time for some falling veggies");
-        }, 1000);
+            getRandomVeggie();
+            console.log("all done");
+        }, 300);
     });
 });
 
-getRandomVeggie();
+
+// getRandomVeggie();
