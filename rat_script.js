@@ -1,66 +1,75 @@
-// using let to declare variables i will using in the terminal
 let squash = "squash"; // yellow
 let eggplant = "eggplant"; // purple
 let zucchini = "zucchini"; // green
 let bellPepper = "bell pepper"; // red
 
-// making a wait func for the falling veggies
-const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
-// making an async func
-async function tenSecStop() {
-    await wait(10000);
-    console.log("all done now");
-}
-
-// make a function to randomly select a veggie from the list
-function getRandomVeggie(currentVeggie, ArgCounter) {
+// make a function to randomly select a veggie from the list and put in array
+function getRandomVeggie(filledVeggieArray) {
     const veggies = [squash, eggplant, zucchini, bellPepper]; // array string list of the veggies
     let randomIndex = Math.floor(Math.random() * veggies.length);
-    let counter = 0, ArgCounter = 0;
+    let counter = 0;
+    filledVeggieArray = [];
+    let currentVeggie = "";
 
     do {
         switch (veggies[randomIndex]) {
             case squash:
                 console.log("squash (yellow)");
-                return currentVeggie = squash;
+                currentVeggie = squash;
+                filledVeggieArray.push(currentVeggie);
+                break;
             case eggplant:
                 console.log("eggplant (purple)");
-                return currentVeggie = eggplant;
+                currentVeggie = eggplant;
+                filledVeggieArray.push(currentVeggie);
+                break;
             case zucchini:
                 console.log("zucchini (green)");
-                return currentVeggie = zucchini;
+                currentVeggie = zucchini;
+                filledVeggieArray.push(currentVeggie);
+                break;
             case bellPepper:
                 console.log("bell pepper (red)");
-                return currentVeggie = bellPepper;
+                currentVeggie = bellPepper;
+                filledVeggieArray.push(currentVeggie);
+                break;
             default:
                 console.log("no veggie selected");
         }
 
         counter++;
-        counter = ArgCounter;
         randomIndex = Math.floor(Math.random() * veggies.length);
     } while (counter < 15);
+
+
+    let simpleCounter = 0;
+    // test that is for printing
+    while (simpleCounter < 15) {
+        console.log("array : " + filledVeggieArray[simpleCounter]);
+        simpleCounter++;
+    }
+
+    return filledVeggieArray;
 }
 
 // making a function that will put a dot of the veg on the screen 
-function createVeggieDot(randomVeggie, randCounter) {
+function createVeggieDot(randomVeggie) {
     // const dot = document.createElement("div");
     // dot.classList.add("veggie-dot");
     // dot.textContent = veggie;
     // document.body.appendChild(dot);
 
-    console.log("randCounter is at : " + randCounter);
-    randCounter++;
+    let randCounter = 0;
+    randomVeggie = [];
+
 
     while (randCounter < 10) {
-        console.log("creating veggie dot for: " + randomVeggie);
-        getRandomVeggie(randomVeggie);
+        console.log("creating veggie dot for: " + randomVeggie[randCounter]);
+        randCounter++;
     }
+
+    return 0; // becasue i dont want to rewrite the array into random veggie i just wanted it for the array itself
 }
-
-
-
 
 // wait to show the alert so we can have the page loaded first
 window.addEventListener("load", () => {
@@ -69,13 +78,11 @@ window.addEventListener("load", () => {
         setTimeout(() => {
             console.log("starting");
             alert("OH BOY, time for some falling veggies");
-            const randomVeggie = getRandomVeggie();
-            let randomCounter = getRandomVeggie();
-            createVeggieDot(randomVeggie, randomCounter);
+
+            let randomVeggie = [];
+            getRandomVeggie(randomVeggie);
+            createVeggieDot(randomVeggie);
             console.log("all done");``
         }, 300);
     });
 });
-
-
-// getRandomVeggie();
