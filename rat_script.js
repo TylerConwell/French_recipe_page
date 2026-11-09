@@ -49,10 +49,8 @@ function createVeggieDot(randomVeggie) {
     while (randCounter < randomVeggie.length) {
         console.log("creating veggie dot for: " + randomVeggie[randCounter]);
 
-        // const dot = document.createElement("div");
-        // dot.classList.add("veggie-dot");
-        // dot.textContent = randomVeggie[randCounter];
-        // document.body.appendChild(dot);
+        // going to try using the archimedean spiral for the ratatouille
+        // r = a = b * theta
 
         switch (randomVeggie[randCounter]) {
             case squash:
@@ -70,7 +68,6 @@ function createVeggieDot(randomVeggie) {
             default:
                 console.log("no veggie selected");
         }
-
         randCounter++;
     }
     return 0;
@@ -79,11 +76,9 @@ function createVeggieDot(randomVeggie) {
 // wait to show the alert so we can have the page loaded first
 window.addEventListener("load", () => {
     requestAnimationFrame(() => {
-        // tenSecStop();
         setTimeout(() => {
             console.log("starting");
             alert("OH BOY, time for some falling veggies");
-
             let randomVeggie = getRandomVeggie();
             createVeggieDot(randomVeggie);
             console.log("all done");``
