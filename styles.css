@@ -8,7 +8,6 @@
     --linen: #ede3de;
     --burnt-orange: #a76e49;
     --slate: #4b5c5d;
-
     --brown: #3f261d;
 }
 
@@ -130,15 +129,11 @@ p {
     background-color: var(--linen);
     border: 4px solid var(--burnt-orange);
     height: 200px;
-
-    /* needed for making the 1,2,3 boxes not flat & verical */
     flex: 1 1 auto;
-
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding-right: 10px;
-    
 }
 
 .handle {

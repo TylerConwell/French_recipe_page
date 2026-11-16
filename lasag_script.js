@@ -1,52 +1,39 @@
-function pleaseWork() {
-    const veg = ["squash", "eggplant", "zucchini", "bell pepper"];
-    let randomIndex = Math.floor(Math.random() * veg.length);
-    let counter = 0;
 
-    do {
-        switch (veg[randomIndex]) {
-            case "squash":
-                console.log("squash"); 
-                break;
-            case "eggplant":
-                console.log("eggplant");  
-                break;
-            case "zucchini":
-                console.log("zucchini");  
-                break;
-            case "bell pepper":
-                console.log("bell pepper");  
-                break;
-            default:
-                console.log("no veggie selected");
-        }
+function pasta () {
+    // making a new div for the pasta peice to be made
+    const pasta = document.createElement("div");
+    //testing
+    pasta.innerText = "pasta";
+    // document.body.appendChild(pasta);
 
+    pasta.style.width = "100px";
+    pasta.style.height = "20px";
+    pasta.style.backgroundColor = "yellow";
 
-        // if (veg[randomIndex] === "squash") {
-        //     console.log("squash");
-        // } 
-        
-        // else if (veg[randomIndex] === "eggplant") {
-        //     console.log("eggplant");
-        // } 
-        
-        // else if (veg[randomIndex] === "zucchini") {
-        //     console.log("zucchini");
-        // } 
-        
-        // else if (veg[randomIndex] === "bell pepper") {
-        //     console.log("bell pepper");
-        // } 
-        
-        // else {
-        //     console.log("no veggie selected");
-        // }
-
-        counter++;
-        randomIndex = Math.floor(Math.random() * veg.length)
-
-    } while (counter < 10);
-
+    document.body.appendChild(pasta);
 }
 
-pleaseWork();
+
+function paste () {
+    // making the paste for the thicker part of the shape
+    const paste = document.createElement("div");
+    //test
+    paste.innerText = "paste";
+    document.body.appendChild(paste);
+}
+
+
+function parm () {
+    // making the cheese on top
+    const parm = document.createElement("div");
+    //test
+    parm.innerText = "parm";
+    document.body.appendChild(parm);
+}
+
+
+const funcArray = [parm, pasta, paste, pasta, paste, pasta]; // js literally lets you put functs in an arr
+
+for (let i = 0; i < funcArray.length; i++) {
+    funcArray[i]();
+}
