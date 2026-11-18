@@ -172,17 +172,33 @@ p {
 }
 
 #lasagnaCanvas {
+
+    /* tesing stuff */
+    margin-top: 14px;
+    margin-left: 14px;
+    margin-right: 14px;
+
+    border: 2px solid black;
+
+
     position: fixed;
     background-color: transparent;
-    top: 0;
+
     left: 0;
+    top: 0;
+   
+    height: 97%;
+    width: 98%;
+
+
+    
+
+    /* height: 2000;
     width: 100%;
-    height: 100%;
     z-index: 1000;
     pointer-events: none;
     opacity: 1;
-    transition: opacity 0.8s ease-out;
-
+    transition: opacity 0.8s ease-out; */
 }
 
 #lasagnaCanvas.fade-out {
